@@ -7,6 +7,16 @@ function decrypt {
     openssl enc -aes-256-cbc -d -in $1 | less
 }
 
+# Generate a strong password:
+# -a 1: random character password generation
+# -n 10: print 10 password candidates,
+# -m 15 -x 20: minimum and maximum password length.
+# -M SNCL: the password must contain special chars, mayus, numbers and minus
+# -c $(): random seed using opens ssl.
+function pwgen {
+    apg -a 1 -n 10 -m 15 -x 20 -M SNCL -c $(openssl rand 1000)
+}
+
 # Extract compressed files.
 function extract {
   if [ -z "$1" ]; then
