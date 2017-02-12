@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Telegram
+GenericName=Telegram messaging application
+Exec=/opt/Telegram/Telegram
+Icon=/home/nacho/.local/share/icons/telegram.png
+Terminal=false
+Categories=Internet;

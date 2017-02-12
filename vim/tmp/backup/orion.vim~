@@ -34,7 +34,7 @@ hi Boolean      ctermfg=140  ctermbg=None cterm=bold
 hi Keyword      ctermfg=140  ctermbg=None cterm=bold
 hi Comment      ctermfg=250  ctermbg=None cterm=None
 hi Identifier   ctermfg=010  ctermbg=None cterm=bold,italic
-hi Statement    ctermfg=226  ctermbg=None cterm=bold
+hi Statement    ctermfg=190  ctermbg=None cterm=bold
 hi PreProc      ctermfg=014  ctermbg=None cterm=bold
 hi Special      ctermfg=140  ctermbg=None cterm=None
 hi Cursor       ctermfg=None ctermbg=None cterm=None

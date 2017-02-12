@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Windows
+Comment=Launch a Windows 8.1 VM with VirtualBox
+Exec=/usr/local/bin/vbox W8.1
+Icon=/home/nacho/.local/share/icons/windows_logo.png
+Terminal=false
+Categories=System;

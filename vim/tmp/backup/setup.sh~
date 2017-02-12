@@ -32,7 +32,7 @@ official() {
     apt-get install -y ubuntu-restricted-extras build-essential \
         linux-headers-generic libtool-bin
     dpkg --add-architecture i386
-    apt-get install -y vim ssh nmap cryptsetup screen tmux apg
+    apt-get install -y vim ssh nmap cryptsetup screen tmux
     apt-get install -y manpages-es manpages-es-extra
     dpkg-reconfigure locales
     apt-get install -y rar unace p7zip-full p7zip-rar sharutils mpack arj

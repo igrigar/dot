@@ -1,0 +1,96 @@
+\section*{Introducción}
+\addcontentsline{toc}{section}{Introducción}
+
+\begin{wrapfigure}{l}{.5\textwidth}
+    \ytl{60s}{Se usan ``\textit{Mainframes}'' centrales; sistemas de tiempo
+    compartido, recursos centralizados y terminales simples. Interfaces de
+    usuario poco amigables. Aparecen las primeras redes.}
+    \ytl{1974}{Se diseña TCP/IP (Vinton G. Cerf, Robert E. Kahn)}
+    \ytl{80s}{PCs y estaciones de trabajo, estandarización y crecimiento en el
+    número de computadores. Predominio de aplicaciones ejecutables localmente.
+    Interfaces amigables. Redes de area local (LAN, acceso a recursos
+    compartidos. Aparecen los primeros sistemas operativos distribuidos.}
+    \ytl{90s}{Despegue de las aplicaciones ``\textit{cliente/servidor}''. Más
+    descentralización, aplicaciones ejecutadas localmente y en red. Aparece la
+    web (1991). Enorme difusión de Internet gracias a la web. Nuevas necesidades
+    y aplicaciones basadas en la web.}
+    \ytl{00s}{Nuevos paradigmas de computación distribuida; greed computing,
+    peer-to-peer, computación ubicua. Dispositivos móviles. Aplicaciones para
+    internet basadas en Web. Tendencia: todas las aplcaciones y datos en la red
+    (Cloud Computing); todos los dispositivos conectados (Internet of Things).}
+    \caption{Evolución de la informática}
+\end{wrapfigure}
+
+\subsection*{Conceptos previos}
+\addcontentsline{toc}{subsection}{Conceptos previos}
+
+\begin{itemize}
+    \item Un \textbf{programa} es un conjunto de instrucciones.
+    
+    \item Un \textbf{proceso} es un programa en ejecución.
+    
+    \item Una \textbf{red de computadores} es un conjunto de computadores
+    conectados por una red de interconexión.
+    
+    \item Un \textbf{protocolo} es un conjunto de reglas e instrucciones que
+    gobiernan la comunicación en un sistema distribuido, es decir, el
+    intercambio de mensajes.
+\end{itemize}
+
+\subsection*{Computación distribuida}
+\addcontentsline{toc}{subsection}{Computación distribuida}
+
+\textbf{Sistema Distribuido}: sistema formado por recursos hardware y software
+físicamente distribuidos e interconectados a traves de una red, que se comunican
+mediante paso de mensajes y cooperan para realizar una determinada tarea. \\
+
+``Un sistema distribuido es aquel en el que no puedes trabajar en tu máquina por
+el fallo en otra máquina que no sabias ni que existía'' -
+\textit{\textbf{Leslie Lamport}} \\
+
+``Un sistema distribuido es aquel en el que los computadores localizados en una
+red comunican y coordinan sus acciones mediante paso de mensajes'' -
+\textit{\textbf{George Coulouris}} \\
+
+La computación distribuida es aquella que se realiza en un sistema distribuido.
+Sus características principales son:
+
+\begin{itemize}
+    \item Múltiples componentes autónomos.
+    
+    \item Los programas se ejecutan de manera concurrente.
+    
+    \item Única forma de comunicación y sincronizaciín, paso de mensajes.
+    
+    \item Ausencia de un reloj global que permita coordinar las acciones
+    programadas que ejecutan en el sistema.
+    
+    \item Los fallos son independientes y el software es más complejo.
+\end{itemize}
+
+La diferencia entre los \textbf{sistemas distribuidos} y los \textbf{sistemas
+paralelos} es que los primeros tienen como objetivo compartir recursos y
+colaborar. Los segundos tienen como objetivo un alto rendimiento y una alta
+productividad, para ello utilizan máquinas paralelas (multiprocesadores), o
+redes de computadores trabajando como un multicomputador (cluster), etc. Las
+(des)ventajas que pueden ofrecer los sistemas distribuidos son las siguientes:
+
+\begin{itemize}
+    \item Ventajas: compartir recursos (hw, sw, datos); acceso a recursos
+    remotos con un modelo cliente-servidor o un modelo basado en objetos.
+    Ofrecen una buena relación coste/rendimiento. Son escalables. Tolerancia a
+    fallos. Concurrencia, servicio a multiples usuarios simultaneamente.
+    
+    \item Desventajas: coste, fiabilidad y saturación de la interconexión entre
+    los nodos distribuidos. Comunicaciones inseguras. Software mas complejo.
+    Potencia de cada nodo no adecuada.
+\end{itemize}
+
+\begin{figure}[H]
+    \input{./fig/shared_mem.tex}
+    \input{./fig/dist_mem.tex}
+    \caption{Memoria compartida VS memoria distribuida}
+\end{figure}
+
+\clearpage
+

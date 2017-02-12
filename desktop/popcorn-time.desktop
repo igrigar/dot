@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Popcorn-Time
+Comment=P2P Films and TV shows streaming.
+Exec=/opt/Popcorn-Time/Popcorn-Time
+Icon=/home/nacho/.local/share/icons/popcorn_time.png
+Terminal=false
+Categories=Multimedia;
