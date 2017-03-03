@@ -1,7 +1,5 @@
 " .vimrc
 " Author: Ignacio Ripoll
-"
-" Thanks to Steve Losh and Diego Vicente.
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                 BASIC CONFIG                                 "
@@ -25,15 +23,15 @@ set relativenumber " Change the line numbers to be relative to the currenti one.
 set laststatus=2 " Always show the status line.
 set history=100 " Set 100 lines of history file (2 x default)
 set lazyredraw " No screen resize when executing macros.
-"set linebreak " Smarter line wrap.
+set linebreak " Smarter line wrap.
 set splitbelow " Split window horizontally below current split.
 set splitright " Split window vertically right to current split.
-set autoread " Set to auto read when a file is changed from the outside
-set backspace=indent,eol,start " Allow backspace in insert mode
+set autoread " Set to auto read when a file is changed from the outside.
+set backspace=indent,eol,start " Allow backspace in insert mode.
 set visualbell " No sounds.
 set title " Window title same as file title.
 set matchpairs+=<:> " Add angle brackets to the paired characters.
-set synmaxcol=85 " Dont highlight any string longer than 85 chars.
+"set synmaxcol=85 " Dont highlight any string longer than 85 chars.
 
 set timeout " time out on mappings and key codes.
 set timeoutlen=3000 " Time out on : mappings set to 3s
@@ -76,7 +74,7 @@ augroup END
 
 " Show invisible characters (tabs and trailing spaces)
 set list
-set listchars=tab:❯\ ,eol:¬,trail:·
+set listchars=tab:→\ ,eol:¬,trail:·
 
 set showbreak=↪ " Show that char in a wrapped line.
 
@@ -133,10 +131,6 @@ set textwidth=80
 set formatoptions=qrn1j
 set colorcolumn=81
 
-" This section details the backup policy used in vim.
-"
-" We enable backups and set some directories to store the different files that
-" Vim needs to perform backups.
 set backup                        " Enable backups.
 set noswapfile                    " Erradicate the .swp files.
 
@@ -285,10 +279,10 @@ set foldtext=MyFoldText()
 "   + <LEFT|RIGHT|DOWN|UP> arrow keys.
 " Note that everything in the previous list can be type in lower case also.
 " {
-" Important files.
-nnoremap <leader>r :vsplit ~/.vimrc<cr>
-nnoremap <leader>b :vsplit ~/.bash_aliasies<cr>
-nnoremap <leader>x :vsplit ~/.tmux.conf<cr>
+" Important files. I don't really use those mappings.
+"nnoremap <leader>r :vsplit ~/.vimrc<cr>
+"nnoremap <leader>b :vsplit ~/.bash_aliasies<cr>
+"nnoremap <leader>x :vsplit ~/.tmux.conf<cr>
 
 " Toggle line numbers (they are not always needed)
 nnoremap <leader>n :setlocal number!<cr>
@@ -327,11 +321,11 @@ nnoremap <leader>h :split
 " Compile a latex file.
 nnoremap <leader>t :!pdflatex 
 
-" Split resizing in steps of 2 columns/rows.
-nnoremap <c-left> :vertical resize -2<cr>
-nnoremap <c-right> :vertical resize +2<cr>
-nnoremap <c-up> :resize +2<cr>
-nnoremap <c-down> :resize -2<cr>
+" Split resizing in steps of 1 columns/rows. May be tedious, but accurate.
+nnoremap <c-left> :vertical resize -1<cr>
+nnoremap <c-right> :vertical resize +1<cr>
+nnoremap <c-up> :resize +1<cr>
+nnoremap <c-down> :resize -1<cr>
 
 " More intuitive navigation accross the splits, ctrl+h/j/k/l
 nnoremap <c-j> <c-w><c-j>
